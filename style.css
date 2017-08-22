@@ -1,0 +1,60 @@
+html,
+body{
+  width: 100%;
+  height: 100%;
+  background-image:url(raindrops.jpeg);
+  background-size: cover;
+}
+#container{
+  width:80%;
+  margin: auto;
+}
+.box{
+  width:6%;
+  content: url("rectangle.png");
+  margin-right: 0.5%;
+  opacity: 0.8;
+}
+h1{
+  font-family:'Oswald', sans-serif;   
+  font-size: 200%;
+  color:#333333;
+  text-align: center;
+}
+.activateBox{
+  content: url("activatedBox.png");
+  width: 6%;
+}
+.box:hover{
+  width:6%;
+  animation:shake 0.8s reverse;
+  content: url("activatedBox.png");
+}
+button[type="submit"]{
+  color: lightblue;
+  border: 1px solid gray;
+  background-color: blue;
+  margin: auto;
+  margin-top: 2%;
+  display: block;
+}
+@keyframes shake{
+  0%{
+    transform:rotate(20deg);
+  }
+  20%{
+    transform:rotate(20deg);
+  }
+  30%{
+    transform:rotate(-20deg);
+  }
+  50%{
+    transform:rotate(-20deg);
+  }
+  60%{
+    transform:rotate(20deg);
+  }
+  80%{
+    transform:rotate(20deg);
+  }
+}
